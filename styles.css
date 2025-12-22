@@ -1,9 +1,79 @@
-body{
-    background-color: #202020;
-    color: #fff ;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    color: #4CAF50;
-    text-align: center;
+
+/* Fondo general */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8cdda, #fbd3e9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* Contenedor */
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Carta */
+.card {
+  max-width: 650px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 30px;
+  color: #b3395a;
+  margin-bottom: 30px;
+}
+
+/* Texto */
+p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Firma */
+.firma {
+  text-align: right;
+  margin-top: 35px;
+  font-style: italic;
+  color: #555;
+}
+
+.firma span {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #b3395a;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .card {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
